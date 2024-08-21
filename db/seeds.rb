@@ -12,3 +12,5 @@ restaurants = [
 restaurants.each do |restaurant|
   Restaurant.create!(restaurant)
 end
+
+
