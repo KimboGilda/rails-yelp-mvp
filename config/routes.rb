@@ -15,4 +15,8 @@ Rails.application.routes.draw do
   # post redirects after creating the new restaurant to the page of the restaurant
   post "restaurants", to: "restaurants#create"
 
+  # A visitor can see the details of a restaurant, with all the reviews related to the restaurant.
+  get "restaurants/:id", to: "restaurants#show", as: :restaurant
+
+
 end
